@@ -1,0 +1,291 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/WebAPI/WebAPI.csproj": {}
+  },
+  "projects": {
+    "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/Application.csproj",
+        "packagesPath": "/Users/amirbahadori/.nuget/packages/",
+        "outputPath": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/amirbahadori/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/Domain.csproj": {
+                "projectPath": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.18, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/Domain.csproj",
+        "packagesPath": "/Users/amirbahadori/.nuget/packages/",
+        "outputPath": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/amirbahadori/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Infrastructure/Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Infrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/amirbahadori/.nuget/packages/",
+        "outputPath": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/amirbahadori/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/Application.csproj": {
+                "projectPath": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.18, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/WebAPI/WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/WebAPI/WebAPI.csproj",
+        "projectName": "WebAPI",
+        "projectPath": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/WebAPI/WebAPI.csproj",
+        "packagesPath": "/Users/amirbahadori/.nuget/packages/",
+        "outputPath": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/WebAPI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/amirbahadori/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.311/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/Application.csproj": {
+                "projectPath": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/Application.csproj"
+              },
+              "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Infrastructure/Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/bin/Debug/net7.0/Domain.deps.json
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/bin/Debug/net7.0/Domain.dll
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/bin/Debug/net7.0/Domain.pdb
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/obj/Debug/net7.0/Domain.csproj.AssemblyReference.cache
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/obj/Debug/net7.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/obj/Debug/net7.0/Domain.AssemblyInfoInputs.cache
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/obj/Debug/net7.0/Domain.AssemblyInfo.cs
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/obj/Debug/net7.0/Domain.csproj.CoreCompileInputs.cache
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/obj/Debug/net7.0/Domain.dll
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/obj/Debug/net7.0/refint/Domain.dll
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/obj/Debug/net7.0/Domain.pdb
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/obj/Debug/net7.0/ref/Domain.dll

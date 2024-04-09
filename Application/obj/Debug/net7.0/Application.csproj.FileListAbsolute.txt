@@ -1,0 +1,15 @@
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/bin/Debug/net7.0/Application.deps.json
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/bin/Debug/net7.0/Application.dll
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/bin/Debug/net7.0/Application.pdb
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/bin/Debug/net7.0/Domain.dll
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/bin/Debug/net7.0/Domain.pdb
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/obj/Debug/net7.0/Application.csproj.AssemblyReference.cache
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/obj/Debug/net7.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/obj/Debug/net7.0/Application.AssemblyInfoInputs.cache
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/obj/Debug/net7.0/Application.AssemblyInfo.cs
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/obj/Debug/net7.0/Application.csproj.CoreCompileInputs.cache
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/obj/Debug/net7.0/Application.csproj.CopyComplete
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/obj/Debug/net7.0/Application.dll
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/obj/Debug/net7.0/refint/Application.dll
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/obj/Debug/net7.0/Application.pdb
+/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Application/obj/Debug/net7.0/ref/Application.dll
