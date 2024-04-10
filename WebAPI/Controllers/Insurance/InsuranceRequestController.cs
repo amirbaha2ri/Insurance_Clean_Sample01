@@ -12,6 +12,6 @@ public class InsuranceRequestController : BaseController
     
     
     [HttpPost("[action]")]
-    public async Task<IActionResult> CalculateCharge(GetInsuranceRequestListQuery request) =>
+    public async Task<IActionResult> GetInsuranceRequestList(GetInsuranceRequestListQuery request) =>
     Ok(await Mediator.Send(request));
 }

@@ -13,5 +13,15 @@ public class InsuranceRequestCoverage : BaseEntity
     public InsuranceRequestCoverage()
     {
         GuID = Guid.NewGuid().ToString();
+        CreateDate = DateTime.Now;
+    }
+
+    public InsuranceRequestCoverage(int insuranceCoverageId, int insuranceRequestId)
+    {
+        GuID = Guid.NewGuid().ToString();
+
+        InsuranceCoverageId = insuranceCoverageId;
+        InsuranceRequestId = insuranceRequestId;
+
     }
 }

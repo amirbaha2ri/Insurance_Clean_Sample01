@@ -26,7 +26,7 @@ public class AddInsuranceCoverageCommandHandler : IRequestHandler<AddInsuranceCo
     {
         if (await _dbContext.InsuranceCoverages.AnyAsync(c=>c.Title == request.Title, cancellationToken))
         {
-            throw new HttpRequestException("This name is already taken.",null,HttpStatusCode.BadRequest);
+            throw new ApplicationException("This name is already taken.",null);
         }
 
         var insuranceCoverage = new InsuranceCoverage(request.Title,request.MaximumFund,request.MinimumFund,request.Multiplier);

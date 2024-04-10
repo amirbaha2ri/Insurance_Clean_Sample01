@@ -31,12 +31,12 @@ public class AddInsuranceRequestCommandHandler : IRequestHandler<AddInsuranceReq
     {
         if (string.IsNullOrEmpty(request.Title))
         {
-            throw new HttpRequestException("Title is not valid.",null,HttpStatusCode.BadRequest);
+            throw new ApplicationException("Title is not valid.",null);
         }
 
         if (! request.InsuranceCoverageIds.Any())
         {
-            throw new HttpRequestException("Coverage list is empty.",null,HttpStatusCode.BadRequest);
+            throw new ApplicationException("Coverage list is empty.",null);
         }
 
         var insuranceCoverages =
@@ -49,7 +49,7 @@ public class AddInsuranceRequestCommandHandler : IRequestHandler<AddInsuranceReq
         {
             if (request.Fund > insuranceCoverage.MaximumFund || request.Fund < insuranceCoverage.MinimumFund)
             {
-                throw new HttpRequestException($"Fund is not acceptable for coverage: {insuranceCoverage.Title}." ,null,HttpStatusCode.BadRequest);
+                throw new ApplicationException($"Fund is not acceptable for coverage: {insuranceCoverage.Title}.");
             }
             insuranceRequest.Premium += insuranceCoverage.Multiplier * request.Fund;
             insuranceRequest.InsuranceRequestCoverages.Add(new InsuranceRequestCoverage(){InsuranceCoverage = insuranceCoverage});
