@@ -96,13 +96,16 @@ namespace Infrastructure.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<double>("Premium")
+                        .HasColumnType("float");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
 
-                    b.ToTable("InsuranceCharges");
+                    b.ToTable("InsuranceRequests");
                 });
 
             modelBuilder.Entity("Domain.Modules.InsuranceRequestCoverage", b =>
@@ -142,7 +145,7 @@ namespace Infrastructure.Persistence.Migrations
 
                     b.HasIndex("InsuranceRequestId");
 
-                    b.ToTable("InsuranceRequestCoverage");
+                    b.ToTable("InsuranceRequestCoverages");
                 });
 
             modelBuilder.Entity("Domain.Modules.InsuranceRequestCoverage", b =>

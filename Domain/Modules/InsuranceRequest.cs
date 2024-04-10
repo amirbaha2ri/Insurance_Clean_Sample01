@@ -7,9 +7,25 @@ namespace Domain.Modules;
 /// </summary>
 public class InsuranceRequest : BaseEntity
 {
+    /// <summary>
+    /// عنوان
+    /// </summary>
     public string Title { get; set; }
+    
+    /// <summary>
+    /// لیست پوشش‌های بیمه
+    /// </summary>
     public virtual List<InsuranceRequestCoverage> InsuranceRequestCoverages { get; set; } = new();
+    
+    /// <summary>
+    /// سرمایه
+    /// </summary>
     public double Fund { get; set; }
+    
+    /// <summary>
+    /// حق بیمه
+    /// </summary>
+    public double Premium { get; set; }
 
     public InsuranceRequest()
     {
@@ -20,5 +36,6 @@ public class InsuranceRequest : BaseEntity
     {
         Title = title;
         Fund = fund;
+        GuID = Guid.NewGuid().ToString();
     }
 }

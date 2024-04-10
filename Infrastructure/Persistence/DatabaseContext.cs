@@ -10,8 +10,9 @@ public class DatabaseContext : DbContext, IDatabaseContext
 {
     private readonly IMediator _mediator;
     
-    public DbSet<InsuranceRequest> InsuranceCharges => Set<InsuranceRequest>();
+    public DbSet<InsuranceRequest> InsuranceRequests => Set<InsuranceRequest>();
     public DbSet<InsuranceCoverage> InsuranceCoverages => Set<InsuranceCoverage>();
+    public DbSet<InsuranceRequestCoverage> InsuranceRequestCoverages => Set<InsuranceRequestCoverage>();
 
     
     public DatabaseContext(DbContextOptions options
