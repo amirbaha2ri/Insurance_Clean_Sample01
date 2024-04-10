@@ -6,8 +6,8 @@ namespace Application.Base;
 
 public interface IDatabaseContext
 {
-    DbSet<InsuranceCharge> InsuranceCharges { get; }
+    DbSet<InsuranceRequest> InsuranceCharges { get; }
+    DbSet<InsuranceCoverage> InsuranceCoverages { get; }
     
-
-    
+    Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8A7JhAu7ZQy5rxihJY0nUBHtO2ovBmKqvzLCu+pC6G4Z+tCM+kUdCK+WnhV5CupWz7rta8TSNpjMXr9G0eZv2g==",
+  "dgSpecHash": "GHhT4dggfKFWVaMPH+1vpJFjhROxdeMugf/u5cPSptNPnyuifm36Y+VNmr6njk7t4BLZsCHnybqUe74aPDQ4uA==",
   "success": true,
   "projectFilePath": "/Volumes/Amir/Works/TestArea/Tadbir/Tadbir/Domain/Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/amirbahadori/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

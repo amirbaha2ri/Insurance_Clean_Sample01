@@ -25,7 +25,7 @@ namespace Infrastructure.Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Domain.Modules.InsuranceCharge", b =>
+            modelBuilder.Entity("Domain.Modules.InsuranceCoverage", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -50,9 +50,128 @@ namespace Infrastructure.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<double>("MaximumFund")
+                        .HasColumnType("float");
+
+                    b.Property<double>("MinimumFund")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Multiplier")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("InsuranceCoverages");
+                });
+
+            modelBuilder.Entity("Domain.Modules.InsuranceRequest", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int?>("Code")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Fund")
+                        .HasColumnType("float");
+
+                    b.Property<string>("GuID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("ID");
 
                     b.ToTable("InsuranceCharges");
+                });
+
+            modelBuilder.Entity("Domain.Modules.InsuranceRequestCoverage", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int?>("Code")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GuID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("InsuranceCoverageId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("InsuranceRequestId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("InsuranceCoverageId");
+
+                    b.HasIndex("InsuranceRequestId");
+
+                    b.ToTable("InsuranceRequestCoverage");
+                });
+
+            modelBuilder.Entity("Domain.Modules.InsuranceRequestCoverage", b =>
+                {
+                    b.HasOne("Domain.Modules.InsuranceCoverage", "InsuranceCoverage")
+                        .WithMany("InsuranceRequestCoverages")
+                        .HasForeignKey("InsuranceCoverageId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Modules.InsuranceRequest", "InsuranceRequest")
+                        .WithMany("InsuranceRequestCoverages")
+                        .HasForeignKey("InsuranceRequestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("InsuranceCoverage");
+
+                    b.Navigation("InsuranceRequest");
+                });
+
+            modelBuilder.Entity("Domain.Modules.InsuranceCoverage", b =>
+                {
+                    b.Navigation("InsuranceRequestCoverages");
+                });
+
+            modelBuilder.Entity("Domain.Modules.InsuranceRequest", b =>
+                {
+                    b.Navigation("InsuranceRequestCoverages");
                 });
 #pragma warning restore 612, 618
         }

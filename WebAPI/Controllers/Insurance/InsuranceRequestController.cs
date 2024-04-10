@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers.Insurance;
 
-public class InsuranceController : BaseController
+public class InsuranceRequestController : BaseController
 {
     [HttpGet]
     public async Task<IActionResult> CalculateCharge()
